@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: red;
+            display: inline-block;
+            padding: 20px;
+        }
+        .box1{
+            display: inline-block;
+            padding: 20px;
+            background-color: blue;
+        }
+        .box2{
+            display: inline-block;
+            padding: 20px;
+            background-color: green;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+        <div class="box1">
+            <div class="box">
+                <div class="box2">
+                    <div class="box1">
+                        <div class="box">I am a Box</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
